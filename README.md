@@ -24,3 +24,11 @@ gmail_from=your_email
 gmail_app_password=your_google_secure_app_code
 gmail_to=send_to_email
 ```
+
+## What script do 
+> Output resource     
+> If CPU **90%** or **more** in usage then output file is sent to email  
+> Email contain:          
+**1. Top 5 processes which consuming high CPU**   
+**2. Top 10 Processes which consuming high CPU using the ps command**         
+**3. Attachment file with docker resources output**
