@@ -17,12 +17,12 @@ sudo ./monitoring.sh
 
 > Make and setup .env file: 
 ```
-file_output=file_name_of_stats_output.txt
-message=mail_file_output.*
-user=your_linux_username
-gmail_from=your_email
+file_output=example.txt
+message=example.out
+user=linuxuser
+gmail_from=example@gmail.com
 gmail_app_password=your_google_secure_app_code
-gmail_to=send_to_email
+gmail_to=example@gmail.com
 ```
 
 ## What script do 
