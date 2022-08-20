@@ -32,3 +32,9 @@ gmail_to=send_to_email
 **1. Top 5 processes which consuming high CPU**   
 **2. Top 10 Processes which consuming high CPU using the ps command**         
 **3. Attachment file with docker resources output**
+
+## Add a cronjob
+```bash
+crontab -e
+```
+> */10 * * * * sudo bash /home/datadrill/Desktop/docker_monitor/monitoring.sh
