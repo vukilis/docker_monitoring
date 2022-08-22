@@ -9,10 +9,19 @@
 
 ## Usage
 
+* With Python and Bash
+
 ```bash
 pip install -r requirements.txt
 touch .env
 sudo ./monitoring.sh
+```
+
+* Only with Bash
+
+```bash
+touch .env
+sudo ./monitoring_ob.sh
 ```
 
 > Make and setup .env file: 
