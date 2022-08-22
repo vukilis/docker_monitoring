@@ -70,7 +70,7 @@ do
         # Email alert
         user=$(awk 'BEGIN {FS="="} NR==3 {print $2}' .env | sed 's/"//g')
         num=3
-        if [ "$cpu_use" -ge 50 ]; 
+        if [ "$cpu_use" -ge 90 ]; 
         then
             SUBJECT="Report"
             MESSAGE=$(awk 'BEGIN {FS="="} NR==2 {print $2}' .env | sed 's/"//g')  # file name of mail attachemnt
