@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# curl -L https://raw.githubusercontent.com/wmnnd/nginx-certbot/master/init-letsencrypt.sh > monitoring_ob.sh && chmod 755 monitoring_ob.sh
+
 REQUIRED_PKG="swaks"
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG | grep "install ok installed")
 echo Checking for $REQUIRED_PKG: $PKG_OK
@@ -70,7 +72,7 @@ do
         # Email alert
         user=$(awk 'BEGIN {FS="="} NR==3 {print $2}' .env | sed 's/"//g')
         num=3
-        if [ "$cpu_use" -ge 90 ]; 
+        if [ "$cpu_use" -ge 50 ]; 
         then
             SUBJECT="Report"
             MESSAGE=$(awk 'BEGIN {FS="="} NR==2 {print $2}' .env | sed 's/"//g')  # file name of mail attachemnt

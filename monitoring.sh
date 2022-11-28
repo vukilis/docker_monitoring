@@ -62,7 +62,7 @@ do
         # Email alert
         user=$(awk 'BEGIN {FS="="} NR==3 {print $2}' .env | sed 's/"//g')
         num=3
-        if [ "$cpu_use" -ge 90 ]; 
+        if [ "$cpu_use" -ge 50 ]; 
         then
             MESSAGE=$(awk 'BEGIN {FS="="} NR==2 {print $2}' .env | sed 's/"//g')  # file name of mail attachemnt
             echo "ATTENTION: CPU load is high on ${user} at ${dat}" >> $MESSAGE

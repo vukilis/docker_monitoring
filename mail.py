@@ -4,6 +4,11 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
+# path= "/home/datadrill/Desktop/docker_monitor"  # path to the script directory
+# file = "Docker_Monitoring_Stats.txt"            # file name of stats output
+# file_alert = "mail.log"                         # file name of mail attachemnt
+# full_path = f"{path}{os.sep}{file}" 
+
 load_dotenv('.env')
 path = os.getcwd()
 file = os.environ.get("file_output")
